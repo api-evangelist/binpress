@@ -1,7 +1,29 @@
 aid: binpress
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/binpress.png
 name: Binpress
-description: Binpress is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Binpress was a marketplace for commercial source code and open-source
+  software components, founded in 2011 in Israel by Adam Benayoun (CEO) and
+  Eran Galperin (CTO) and backed by 500 Startups (500 Global). The platform let
+  developers publish, discover, buy, and sell SDKs, libraries, and code
+  components on a 70/30 revenue split, growing to roughly 1,000 listings with
+  GitHub integration and later adding hosted storefronts for digital goods. The
+  company was acquired by CodersClan in 2016 and no longer operates as an active
+  developer platform; the binpress.com domain has since been repurposed as an
+  unrelated digital-business content site with no public API. This profile
+  originated as a 500 Global portfolio lead surfaced into the API Evangelist
+  network for enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/binpress/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +31,19 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-acquired-by: codersclan
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Source Code Marketplace
+- Developer Tools
+- SDKs
+- Software Components
+- Digital Goods
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +53,12 @@ maintainers:
 common:
 - type: Website
   url: https://binpress.com
+- type: GitHubOrganization
+  url: https://github.com/Binpress
+- type: DomainSecurity
+  url: security/binpress-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
